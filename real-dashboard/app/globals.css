@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --navy: #0c3468;
+  --cream: #F5F0E8;
+  --cream-d: #EAE3D5;
+  --cream-b: #D8D0C0;
+  --white: #fff;
+  --text: #1a1a1a;
+  --muted: #8a8a8a;
+  --faint: #c8c8c8;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: var(--cream);
+  color: var(--text);
+  font-size: 13px;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* scrollbar */
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: var(--cream-d); }
+::-webkit-scrollbar-thumb { background: var(--cream-b); }
+
+/* status badges */
+.badge { display: inline-flex; align-items: center; font-size: 9px; padding: 3px 8px; font-weight: 700; letter-spacing: .8px; text-transform: uppercase; font-family: 'Montserrat', sans-serif; cursor: pointer; border: none; }
+.badge-pending  { background: #F4F4F2; color: #888; }
+.badge-waiting  { background: #E8F0FB; color: #0c3468; }
+.badge-approved { background: #EAF4EA; color: #2D6A2D; }
+.badge-posted   { background: #E0F4EE; color: #0A5C48; }
+.badge-feedback { background: #FAF0EA; color: #A03010; }
+.badge-edited   { background: #FBF2E0; color: #7A4800; }
+
+/* status left border */
+.border-pending  { border-left: 4px solid #888; }
+.border-waiting  { border-left: 4px solid #0c3468; }
+.border-approved { border-left: 4px solid #2D6A2D; }
+.border-posted   { border-left: 4px solid #0A5C48; }
+.border-feedback { border-left: 4px solid #A03010; }
+.border-edited   { border-left: 4px solid #7A4800; }
+
+/* inputs */
+input, select, textarea {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+}
+input:focus, select:focus, textarea:focus { outline: none; border-color: var(--navy) !important; }
