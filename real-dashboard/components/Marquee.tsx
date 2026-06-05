@@ -1,7 +1,7 @@
 'use client'
 
 // Product images imported as static assets from /public/products/
-const IMGS = Array.from({ length: 9 }, (_, i) => `/products/${i + 1}.jpg`)
+const IMGS = Array.from({ length: 9 }, (_, i) => `const IMGS = Array.from({ length: 9 }, (_, i) => `/${i + 1}.jpg`)`)
 
 export default function Marquee() {
   const all = [...IMGS, ...IMGS] // duplicate for seamless loop
