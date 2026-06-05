@@ -1,6 +1,7 @@
 'use client'
 
-const IMGS = Array.from({ length: 9 }, (_, i) => `https://raw.githubusercontent.com/bichnguyenk3/real-media-dashboard/main/${i + 1}.jpg`)
+const BASE = 'https://wbzydqwvadklutwvmwpa.supabase.co/storage/v1/object/public/post-files'
+const IMGS = Array.from({ length: 9 }, (_, i) => `${BASE}/${i + 1}.jpg`)
 
 export default function Marquee() {
   const all = [...IMGS, ...IMGS]
